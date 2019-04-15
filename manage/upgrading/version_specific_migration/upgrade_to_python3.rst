@@ -214,6 +214,7 @@ use unittest instead of unittest2
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: python
+
    - import unittest2 as unittest
    + import unittest
 
@@ -231,6 +232,7 @@ use range for xrange (xrange not available in python3)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: python
+
    - xrange(0, len(list), size)
    + range(0, len(list), size)
 
