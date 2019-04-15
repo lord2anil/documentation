@@ -194,6 +194,117 @@ You can use ``isort`` to fix the order of imports:
 
 After you run the commands above, you need to review all changes and fix what ``modernizer`` did not get right.
 
+
+? code changes
+--------------
+
+
+use implementer decorator
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: python
+
+   -class ApiBaseView(BrowserView):
+   -    implements(IAPIMethod)
+   +@implementer(IAPIMethod)
+   +class ApiBaseView(BrowserView):
+
+
+use unittest instead of unittest2
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+update exception handling (try except)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: python
+
+   - except ValueError, e:
+   + except ValueError as e:
+
+
+use range for xrange (xrange not available in python3)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: python
+   - xrange(0, len(list), size)
+   + range(0, len(list), size)
+
+
+keys, values, items, range do not return lists in python3
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+example fix by modernizer:
+
+.. code-block:: python
+
+   - len(formatted_fields.keys())
+   + len(list(formatted_fields.keys()))
+
+-> the generator like behavior might be sufficient in code for example in a for-loop:
+
+.. code-block:: python
+
+   for element in formatted_fields.keys():
+       ...
+   
+   
+modernizer adds "from __future__ import print_function" even if fixer is disabled   
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+if you have print statements like:
+
+.. code-block:: python
+
+   print('foo', file=fileobj)
+   
+or
+
+.. code-block:: python
+
+   print('[AttributeError]', e)
+
+modernizer might still add the the future import "from __future__ import print_function" even if the
+fixer is disabled
+
+
+modernizer updates check for basestring 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: python
+
+   - isinstance(e.doc, basestring)
+   + isinstance(e.doc, six.string_types)
+   
+-> ?TODO is there a better way 
+
+
+moved imports six.moves
+~~~~~~~~~~~~~~~~~~~~~~~
+
+-> might be better using conditional imports checking for six.PY2
+
+Problem we encountered with import of whole module:
+
+.. code-block:: python
+
+   -import HTMLParser
+   +import six.moves.html_parser
+   ...
+   - html_parser = HTMLParser.HTMLParser()
+   + html_parser = six.moves.html_parser.HTMLParser()
+
+-> six.moves in code is impractical
+use better import before running modernizer:
+
+.. code-block:: python
+
+   from HTMLParser import HTMLParser
+   ...
+   html_parser = HTMLParser()
+
+
+
 3 Use ``precompiler``
 ---------------------
 
