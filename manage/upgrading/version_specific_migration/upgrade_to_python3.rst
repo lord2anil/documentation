@@ -213,6 +213,10 @@ use implementer decorator
 use unittest instead of unittest2
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. code-block:: python
+   - import unittest2 as unittest
+   + import unittest
+
 
 update exception handling (try except)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -279,12 +283,16 @@ modernizer updates check for basestring
 -> ?TODO is there a better way 
 
 
-moved imports six.moves
-~~~~~~~~~~~~~~~~~~~~~~~
+moved imports using six.moves
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 -> might be better using conditional imports checking for six.PY2
 
-Problem we encountered with import of whole module:
+
+moved imports using six.moves inside code
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Problem encountered with import of whole module:
 
 .. code-block:: python
 
