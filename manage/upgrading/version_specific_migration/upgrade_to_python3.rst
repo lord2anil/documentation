@@ -305,11 +305,12 @@ Problem encountered with import of whole module:
    + html_parser = six.moves.html_parser.HTMLParser()
 
 -> six.moves in code is impractical
-use better import before running modernizer:
+use better import before running or re-running modernizer:
 
 .. code-block:: python
 
-   from HTMLParser import HTMLParser
+   -from HTMLParser import HTMLParser
+   +from six.moves.html_parser import HTMLParser
    ...
    html_parser = HTMLParser()
 
