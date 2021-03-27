@@ -1,0 +1,13 @@
+{
+  "unversionedId": "hello-world",
+  "id": "hello-world",
+  "isDocsHomePage": false,
+  "title": "hello-world",
+  "description": "Hello World",
+  "source": "@site/docs/hello-world.md",
+  "slug": "/hello-world",
+  "permalink": "/docs/hello-world",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/hello-world.md",
+  "version": "current",
+  "sidebar": "someSidebar"
+}

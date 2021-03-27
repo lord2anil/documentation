@@ -1,0 +1,13 @@
+external
+!external/index.rst
+/_robot/*.png
+broken*
+*.mo
+.DS_Store
+_locales
+develop/coredev
+develop/plone.api
+develop/addons/bobtemplates.plone
+.project
+_build
+settings.json
