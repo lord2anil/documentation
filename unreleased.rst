@@ -1,7 +1,0 @@
-==========
-Unreleased
-==========
-
-.. note::
-
-  Coming soon ...
