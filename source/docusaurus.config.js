@@ -11,18 +11,18 @@ module.exports = {
   projectName: 'documentation', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: 'Documentation',
       logo: {
         alt: 'Plone Logo',
-        src: 'img/logo.svg',
+        src: 'img/Plone-logo.svg',
       },
       items: [
-        {
-          to: 'docs/',
-          activeBasePath: 'docs',
-          label: 'Docs',
-          position: 'left',
-        },
+        // {
+        //   to: 'docs/',
+        //   activeBasePath: 'docs',
+        //   label: 'Docs',
+        //   position: 'left',
+        // },
         {
           href: 'https://github.com/plone/documentation',
           label: 'GitHub',
