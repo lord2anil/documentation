@@ -2,8 +2,12 @@ module.exports = {
   docs: [
     {
       type: "category",
-      label: "About",
+      label: "Overview",
       items: [
+        "about-plone",
+        "about-volto",
+        "requirements",
+        "glossary",
         "getting-started",
         "create-a-page",
         "create-a-document",
