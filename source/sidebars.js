@@ -36,5 +36,15 @@ module.exports = {
       label: "Addons",
       items: ["addons"],
     },
+    {
+      type: "category",
+      label: "Backend",
+      items: ["addons"],
+    },
+    {
+      type: "category",
+      label: "Deploying",
+      items: ["addons"],
+    },
   ],
 };
