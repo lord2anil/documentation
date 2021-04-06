@@ -39,6 +39,28 @@ const features = [
   },
 ];
 
+const ContributionSection = () => {
+
+  return (
+    <div className="contribution">
+      <div className="center-elem contribution-text">
+        <h2>Make your first contribution to Apache APISIX™</h2>
+      </div>
+      <div className="center-elem">
+        <p>Find a good first issue to get you started !</p>
+      </div>
+      <div className="contribution-link">
+             <Link
+              to="/docs/general/contributor-guide#good-first-issues"
+             >
+              <GitHubLogo className="contribution-logo" />
+              Good First Issues
+            </Link>
+      </div>
+    </div>
+  );
+};
+
 function Feature({imageUrl, title, description}) {
   const imgUrl = useBaseUrl(imageUrl);
   return (

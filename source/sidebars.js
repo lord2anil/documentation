@@ -44,7 +44,7 @@ module.exports = {
     {
       type: "category",
       label: "Deploying",
-      items: ["addons"],
+      items: ["simple"],
     },
   ],
 };
