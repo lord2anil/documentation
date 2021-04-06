@@ -28,6 +28,11 @@ module.exports = {
           label: 'GitHub',
           position: 'right',
         },
+        {
+          to: "/help",
+          label: "Help",
+          position: "right",
+        },
       ],
     },
     footer: {
