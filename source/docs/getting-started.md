@@ -1,28 +1,22 @@
 ---
-title: Getting Started
+title: Introduction
 slug: /
 ---
 
-## Step 1: Generate a new Docusaurus site
+Volto is a React-based frontend for the Plone CMS. It will become the default UI for the upcoming Plone 6 release.
 
-If you haven't already, generate a new Docusaurus site using the classic template:
+Although it hasn't reached yet full parity with Plone "classic" UI, Volto provides a very attractive proposition to its early adopters: integration with the modern frontend development world, access to the huge ecosystem of React libraries and addons and not least, open Plone as a development platform for non-Plone trained programmers.
 
-```shell
-npx @docusaurus/init@latest init my-website classic
-```
+Thanks to the use of the Plone API framework, it is fully compatible with Plone's Dexterity content type framework (and even the older Archetypes framework). But its power comes from the innovative Pastanaga Editor, which replaces the typical richtext editing experience provided by the TinyMCE editor with a streamlined Mosaic-like editor based on "blocks".
 
-## Step 2: Start your Docusaurus site
+Thanks to their simplicity and easy access to advanced frontend integration, the Volto blocks can provide a fast development experience that reduces developer frustration and improves end-user experience.
 
-Run the development server in the newly created `my-website` folder:
+To start developing a new Volto project you should have minimal React and modern Javascript knowledge. Follow the Getting started guide to bootstrap a new Volto project and start hacking!
 
-```shell
-cd my-website
+## Plone
 
-npx docusaurus start
-```
+Plone - The Ultimate Enterprise CMS
 
-Open `docs/getting-started.md` and edit some lines. The site reloads automatically and display your changes.
+## Volto
 
-## That's it!
-
-Congratulations! You've successfully run and modified your Docusaurus project.
+Here more about Volto and friends
