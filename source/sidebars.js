@@ -38,7 +38,10 @@ module.exports = {
     {
       type: "category",
       label: "Deploying",
-      items: ["simple"],
+      items: [
+        "simple",
+        "pm2"
+    ],
     },
   ],
 };
