@@ -23,7 +23,10 @@ module.exports = {
     {
       type: "category",
       label: "Theming",
-      items: ["semantic"],
+      items: [
+        "semantic",
+        "custom-styling",
+      ],
     },
     {
       type: "category",
