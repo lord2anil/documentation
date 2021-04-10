@@ -24,14 +24,29 @@ module.exports = {
         //   position: 'left',
         // },
         {
-          href: 'https://github.com/plone/documentation',
-          label: 'GitHub',
+          href: 'https://volto.kitconcept.com/',
+          label: 'Demo',
+          position: 'right',
+        },
+        {
+          href: 'https://community.plone.org/',
+          label: 'Community',
+          position: 'right',
+        },
+        {
+          href: 'https://training.plone.org/',
+          label: 'Training',
           position: 'right',
         },
         {
           to: "/help",
           label: "Help",
           position: "right",
+        },
+        {
+          href: 'https://github.com/plone/documentation',
+          label: 'GitHub',
+          position: 'right',
         },
       ],
     },
