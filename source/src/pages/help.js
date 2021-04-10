@@ -65,6 +65,10 @@ function Help(props) {
           <p>Ask questions and join the community.</p>
           <div className="buttons">
             <a href="https://community.plone.org" target="_blank">
+              Discourse
+              <ChevronRight />
+            </a>
+            <a href="https://github.com/plone" target="_blank">
               GitHub
               <ChevronRight />
             </a>
