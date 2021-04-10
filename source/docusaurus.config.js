@@ -7,11 +7,63 @@ module.exports = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
+  customFields: {
+    tagline2:
+      "Apache APISIX software provides rich traffic management features such as load balancing, dynamic upstream, canary release, circuit breaking, authentication, observability, and more.",
+    repoUrl: "https://github.com/apache/apisix",
+    docsUrl: "",
+    downloads: [
+      {
+        name: "About",
+        nameInParamCase: "apisix",
+        description: "General info, what is Volto, what is Plone",
+        shape: "triangle",
+        color: "var(--ifm-color-primary)",
+        githubRepo: "apache/apisix",
+        version: "2.5",
+        releaseDate: "2021-04-05",
+        firstDocPath: "/getting-started",
+      },
+      {
+        name: "Use Cases",
+        nameInParamCase: "dashboard",
+        description:
+          "See who is using Volto and why",
+        shape: "square",
+        color: "#10B981",
+        githubRepo: "apache/apisix-dashboard",
+        version: "2.5",
+        releaseDate: "2021-03-29",
+        firstDocPath: "/USER_GUIDE",
+      },
+      {
+        name: "Tutorials",
+        nameInParamCase: "ingress-controller",
+        description: "Learn how to get things done",
+        shape: "hexagon",
+        color: "#2563EB",
+        githubRepo: "apache/apisix-ingress-controller",
+        version: "0.4.0",
+        releaseDate: "2021-03-12",
+        firstDocPath: "/getting-started",
+      },
+      {
+        name: "Training",
+        nameInParamCase: "ingress-controller",
+        description: "Follow a Volto training",
+        shape: "hexagon",
+        color: "#2563EB",
+        githubRepo: "apache/apisix-ingress-controller",
+        version: "0.4.0",
+        releaseDate: "2021-03-12",
+        firstDocPath: "/getting-started",
+      }
+    ]},
   organizationName: 'plone', // Usually your GitHub org/user name.
   projectName: 'documentation', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'Documentation',
+      title: '',
       logo: {
         alt: 'Plone Logo',
         src: 'img/Plone-logo.svg',
