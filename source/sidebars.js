@@ -4,7 +4,7 @@ module.exports = {
       type: "category",
       label: "Overview",
       items: [
-        "getting-started",
+        "overview/intro",
         "requirements",
         "glossary",
         "thank-you",

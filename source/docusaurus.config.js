@@ -15,20 +15,20 @@ module.exports = {
     downloads: [
       {
         name: "About",
-        nameInParamCase: "apisix",
-        description: "General info, what is Volto, what is Plone",
+        nameInParamCase: "overview",
+        description: "General info about Volto, Plone and the differences between Volto and Plone Classic",
         shape: "triangle",
         color: "var(--ifm-color-primary)",
         githubRepo: "apache/apisix",
         version: "2.5",
         releaseDate: "2021-04-05",
-        firstDocPath: "/getting-started",
+        firstDocPath: "/intro",
       },
       {
         name: "Use Cases",
         nameInParamCase: "dashboard",
         description:
-          "See who is using Volto and why",
+          "See who is using Plone and why",
         shape: "square",
         color: "#10B981",
         githubRepo: "apache/apisix-dashboard",
@@ -38,19 +38,19 @@ module.exports = {
       },
       {
         name: "Tutorials",
-        nameInParamCase: "ingress-controller",
+        nameInParamCase: "tutorials",
         description: "Learn how to get things done",
         shape: "hexagon",
         color: "#2563EB",
         githubRepo: "apache/apisix-ingress-controller",
         version: "0.4.0",
         releaseDate: "2021-03-12",
-        firstDocPath: "/getting-started",
+        firstDocPath: "/creating-views",
       },
       {
         name: "Training",
         nameInParamCase: "ingress-controller",
-        description: "Follow a Volto training",
+        description: "Follow a Plone training",
         shape: "hexagon",
         color: "#2563EB",
         githubRepo: "apache/apisix-ingress-controller",
@@ -75,6 +75,11 @@ module.exports = {
         //   label: 'Docs',
         //   position: 'left',
         // },
+        {
+          href: 'https://docs.plone.org/5',
+          label: 'Plone Classic',
+          position: 'right',
+        },
         {
           href: 'https://volto.kitconcept.com/',
           label: 'Demo',
@@ -112,17 +117,25 @@ module.exports = {
               label: 'Getting Started',
               to: 'docs/',
             },
+            {
+              label: 'Plone Classic',
+              to: 'docs/',
+            },
           ],
         },
         {
           title: 'Community',
           items: [
             {
+              label: 'Forum',
+              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+            },
+            {
               label: 'Stack Overflow',
               href: 'https://stackoverflow.com/questions/tagged/docusaurus',
             },
             {
-              label: 'Discord',
+              label: 'Gitter',
               href: 'https://discordapp.com/invite/docusaurus',
             },
             {
@@ -135,17 +148,25 @@ module.exports = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
+              label: 'Planet',
+              href: 'https://github.com/facebook/docusaurus',
+            },
+            {
+              label: 'PLONE.Org',
               to: 'blog',
             },
             {
               label: 'GitHub',
               href: 'https://github.com/facebook/docusaurus',
             },
+            {
+              label: 'Training',
+              href: 'https://github.com/facebook/docusaurus',
+            },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Plone Community - Built with Docusaurus.`,
     },
   },
   presets: [

@@ -1,6 +1,6 @@
 ---
 title: Introduction
-slug: /
+#slug: /
 ---
 
 Volto is a React-based frontend for the Plone CMS. It will become the default UI for the upcoming Plone 6 release.
@@ -20,3 +20,7 @@ Plone - The Ultimate Enterprise CMS
 ## Volto
 
 Here more about Volto and friends
+
+## Plone Classic
+
+What is Plone Classic
