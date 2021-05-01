@@ -40,7 +40,7 @@ module.exports = {
         name: "Tutorials",
         nameInParamCase: "tutorials",
         description: "Learn how to get things done",
-        shape: "hexagon",
+        shape: "verified",
         color: "#2563EB",
         githubRepo: "apache/apisix-ingress-controller",
         version: "0.4.0",

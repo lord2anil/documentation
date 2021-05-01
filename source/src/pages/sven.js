@@ -5,7 +5,7 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 
 import IconTriangle from "../assets/icons/triangle.svg";
 import IconSquare from "../assets/icons/square.svg";
-import IconHexagon from "../assets/icons/hexagon.svg";
+import IconHexagon from "../assets/icons/verified.svg";
 
 const Page = styled.div`
   max-width: var(--ifm-container-width);
