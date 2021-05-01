@@ -7,6 +7,7 @@ module.exports = {
         "overview/intro",
         "requirements",
         "glossary",
+        "overview/license",
         "thank-you",
       ],
     },
