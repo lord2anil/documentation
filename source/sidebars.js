@@ -23,6 +23,11 @@ module.exports = {
     },
     {
       type: "category",
+      label: "Content Management",
+      items: ["tutorials/creating-views"],
+    },
+    {
+      type: "category",
       label: "Theming",
       items: [
         "semantic",
