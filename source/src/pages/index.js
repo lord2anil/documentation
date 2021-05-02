@@ -1,146 +1,156 @@
-const React = require("react");
-import Link from "@docusaurus/Link";
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import useBaseUrl from "@docusaurus/useBaseUrl";
+import React from "react";
+import styled from "styled-components";
 import Layout from "@theme/Layout";
-import GitHubLogo from "../assets/icons/github-logo.svg";
-import { useState, useEffect } from "react";
-import { CSSTransition } from "react-transition-group";
-import ChevronRight from "../assets/icons/chevron-right.svg";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 
-const HomeSplash = () => {
-  const [featureWordIndex, setFeatureWordIndex] = useState(0);
-  const featureWords = ["Fast", "Plone powerd", "Performant"];
+import IconTriangle from "../assets/icons/triangle.svg";
+import IconSquare from "../assets/icons/square.svg";
+import IconHexagon from "../assets/icons/verified.svg";
 
-  const [isShow, setIsShow] = useState(true);
+const Page = styled.div`
+  max-width: var(--ifm-container-width);
+  margin: 0 auto;
+  padding: 2rem var(--ifm-spacing-horizontal);
+  width: 100%;
+`;
+const PageTitle = styled.h1`
+  margin-top: 2rem;
+  font-size: 3rem;
+  font-weight: 800;
+  text-transform: uppercase;
+`;
+const PageSubtitle = styled.div`
+  margin-bottom: 4rem;
+`;
 
-  const changeFeatureWordIndex = (index) => {
-    setIsShow(false);
-    setFeatureWordIndex(index);
-    setIsShow(true);
-  };
+const CardsContainer = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  @media (max-width: 996px) {
+    grid-template-columns: 1fr;
+  }
+`;
+const Card = styled.a`
+  border-radius: 0.75rem;
+  border: 1px solid #eee;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.03);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      if (featureWordIndex >= featureWords.length - 1) {
-        changeFeatureWordIndex(0);
-      } else {
-        changeFeatureWordIndex(featureWordIndex + 1);
-      }
-    }, 3600);
-    return () => clearInterval(timer);
-  }, [featureWordIndex]);
+  @media (max-width: 600px) {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  &:hover {
+    color: inherit;
+    text-decoration: none;
+    svg {
+      transform: rotate(360deg);
+    }
+  }
+`;
+const Title = styled.div`
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  display: block;
+  cursor: pointer;
+  @media (max-width: 600px) {
+    margin-top: 0px;
+    font-size: 1.6rem;
+  }
+  svg {
+    transition: all 0.6s;
+  }
+`;
+const Description = styled.div`
+  color: #374151;
+  font-size: 1rem;
+  margin-top: 0px;
+  @media (max-width: 600px) {
+    margin-top: 6px;
+  }
+`;
+const ShapeBeforeTitle = styled.span`
+  margin-right: 12px;
+  & svg {
+    height: 1.75rem;
+    color: ${(props) => props.color || "var(--ifm-color-primary)"};
+  }
+  @media (max-width: 600px) {
+    margin-right: 8px;
+    & svg {
+      height: 1.3rem;
+    }
+  }
+`;
+const VersionInfo = styled.div`
+  display: inline-flex;
+  font-size: 1rem;
+  margin-top: 1rem;
+  color: #4b5563;
+  span {
+    font-weight: 500;
+  }
+`;
+
+const ProjectCard = (props) => {
+  const {
+    name,
+    nameInParamCase,
+    description,
+    shape,
+    color,
+    version,
+    releaseDate,
+    firstDocPath = "",
+  } = props;
+  const shapeComponent =
+    shape === "triangle" ? (
+      <IconTriangle />
+    ) : shape === "square" ? (
+      <IconSquare />
+    ) : (
+      <IconHexagon />
+    );
 
   return (
-    <div className="hero home-splash">
-      <div className="container">
-        <div className="inner">
-          <div className="padding-vert--md">
-            <h1 className="title slogan">
-              A&nbsp;
-              <span className="feature-word">
-                <CSSTransition
-                  in={isShow}
-                  timeout={2000}
-                  classNames="feature-word-text"
-                  appear={true}
-                >
-                  <span>{featureWords[featureWordIndex]}</span>
-                </CSSTransition>
-              </span>
-              <span className="hide-on-mobile">&nbsp;</span>CMS
-            </h1>
-            <div className="subtitle">
-             Combine the power of Plone and React.
-            </div>
-          </div>
-          <div className="pluginWrapper button-wrapper">
-            <Link
-              to="https://github.com/plone"
-              className="button  button--outline button--primary github"
-            >
-              <GitHubLogo className="github-logo" />
-              View on GitHub
-            </Link>
-            <Link
-              to={useBaseUrl("/docs")}
-              className="button  button--outline button--primary secondary"
-            >
-              Documentation
-            </Link>
-          </div>
-        </div>
-      </div>
-    </div>
+    <Card href={`/docs/${nameInParamCase}${firstDocPath}`}>
+      <Title>
+        <ShapeBeforeTitle color={color}>{shapeComponent}</ShapeBeforeTitle>
+        {name}
+      </Title>
+      <Description>{description}</Description>
+      {/* <VersionInfo>
+        Latest version&nbsp;<span>{version}</span>&nbsp;released at&nbsp;
+        <span>{releaseDate}</span>
+      </VersionInfo> */}
+    </Card>
   );
 };
 
-const LearnHow = () => (
-  <div className="hero">
-    <div className="learn-how">
-      <div className="container">
-        <div className="row">
-          <div className="col col--7">
-            <p className="hero__title">
-              <small>Description</small>
-            </p>
-            <p className="hero__subtitle">
-              <small>
-              Volto is a React-based frontend for the Plone CMS.<br></br>
-              Volto, a new experience for editing the web.
-              Start editing your content the intuitive way.
-              </small>
-            </p>
-          </div>
-          <div className="col">
-            <img
-              className="image"
-              src="https://voltocms.com/static/editor-preview-8bae2d3edae5395fdc29eaf275c2f11c.png"
-              align="right"
-              alt="plone-description"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-);
+export default (props) => {
+  const { siteConfig } = useDocusaurusContext();
+  if (!(siteConfig.customFields.downloads || []).length) {
+    return null;
+  }
+  const projects = siteConfig.customFields.downloads.map((project) => {
+    return <ProjectCard key={project.name} {...project} />;
+  });
 
-
-
-
-const ContributionSection = () => {
-
-  return (
-    <div className="contribution">
-      <div className="center-elem contribution-text">
-        <h2>Make your first contribution to Plone</h2>
-      </div>
-      <div className="center-elem">
-        <p>Find a good first issue to get you started !</p>
-      </div>
-      <div className="contribution-link">
-             <Link
-              to="/docs/general/contributor-guide#good-first-issues"
-             >
-              <GitHubLogo className="contribution-logo" />
-              Good First Issues
-            </Link>
-      </div>
-    </div>
-  );
-};
-
-
-
-const Index = (props) => {
   return (
     <Layout>
-      <HomeSplash />
-      <LearnHow />
-      <ContributionSection />
+      <Page>
+        <PageTitle>Documentation</PageTitle>
+        <PageSubtitle>This is a community-maintained manual for the Plone content management system.</PageSubtitle>
+        <CardsContainer>{projects}</CardsContainer>
+      </Page>
     </Layout>
   );
 };
-
-export default Index;

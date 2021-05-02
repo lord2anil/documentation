@@ -53,7 +53,7 @@ module.exports = {
         description: "Follow a Plone training",
         shape: "hexagon",
         color: "#2563EB",
-        githubRepo: "apache/apisix-ingress-controller",
+        githubRepo: "plone/training",
         version: "0.4.0",
         releaseDate: "2021-03-12",
         firstDocPath: "/getting-started",
