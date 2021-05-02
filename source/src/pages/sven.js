@@ -6,6 +6,8 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import IconTriangle from "../assets/icons/triangle.svg";
 import IconSquare from "../assets/icons/square.svg";
 import IconHexagon from "../assets/icons/verified.svg";
+import IconContent from "../assets/icons/content.svg";
+import IconPlone from "../assets/icons/plone.svg";
 
 const Page = styled.div`
   max-width: var(--ifm-container-width);
@@ -112,13 +114,17 @@ const ProjectCard = (props) => {
     firstDocPath = "",
   } = props;
   const shapeComponent =
-    shape === "triangle" ? (
-      <IconTriangle />
-    ) : shape === "square" ? (
-      <IconSquare />
-    ) : (
-      <IconHexagon />
-    );
+  shape === "triangle" ? (
+    <IconTriangle />
+  ) : shape === "square" ? (
+    <IconSquare />
+  ) : shape === "content" ? (
+    <IconContent />
+  ) : shape === "plone" ? (
+    <IconPlone />
+  ) : (
+    <IconHexagon />
+  );
 
   return (
     <Card href={`/docs/${nameInParamCase}${firstDocPath}`}>
