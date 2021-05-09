@@ -7,23 +7,23 @@ module.exports = {
         "overview/intro",
         "requirements",
         "glossary",
+        "overview/resources",
         "overview/license",
-        "thank-you",
       ],
     },
     {
       type: "category",
-      label: "Getting Started",
+      label: "Get started",
       items: ["install"],
     },
     {
       type: "category",
-      label: "Tutorials",
+      label: "Frontend",
       items: ["tutorials/creating-views"],
     },
     {
       type: "category",
-      label: "Content Management",
+      label: "Backend",
       items: ["tutorials/creating-views"],
     },
     {
@@ -36,17 +36,12 @@ module.exports = {
     },
     {
       type: "category",
-      label: "Addons",
-      items: ["addons"],
-    },
-    {
-      type: "category",
-      label: "Backend",
-      items: ["addons"],
-    },
-    {
-      type: "category",
       label: "Deploying",
+      items: ["simple"],
+    },
+    {
+      type: "category",
+      label: "Content management",
       items: [
         "simple",
         "pm2"
