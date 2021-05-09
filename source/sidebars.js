@@ -5,6 +5,7 @@ module.exports = {
       label: "Overview",
       items: [
         "overview/intro",
+        "overview/use-cases",
         "requirements",
         "glossary",
         "overview/resources",

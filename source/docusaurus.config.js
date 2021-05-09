@@ -26,7 +26,7 @@ module.exports = {
       },
       {
         name: "Use Cases",
-        nameInParamCase: "dashboard",
+        nameInParamCase: "overview",
         description:
           "See who is using Plone and why",
         shape: "square",
@@ -34,7 +34,7 @@ module.exports = {
         githubRepo: "apache/apisix-dashboard",
         version: "2.5",
         releaseDate: "2021-03-29",
-        firstDocPath: "/USER_GUIDE",
+        firstDocPath: "/use-cases",
       },
       {
         name: "Tutorials",
