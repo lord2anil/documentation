@@ -6,6 +6,9 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import IconTriangle from "../assets/icons/triangle.svg";
 import IconSquare from "../assets/icons/square.svg";
 import IconHexagon from "../assets/icons/verified.svg";
+import IconContent from "../assets/icons/content.svg";
+import IconPlone from "../assets/icons/plone.svg";
+import IconConnector from "../assets/icons/connector.svg";
 
 const Page = styled.div`
   max-width: var(--ifm-container-width);
@@ -116,6 +119,12 @@ const ProjectCard = (props) => {
       <IconTriangle />
     ) : shape === "square" ? (
       <IconSquare />
+    ) : shape === "content" ? (
+        <IconContent />
+    ) : shape === "plone" ? (
+        <IconPlone />
+    ) : shape === "connector" ? (
+        <IconConnector />
     ) : (
       <IconHexagon />
     );
