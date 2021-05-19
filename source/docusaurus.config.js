@@ -17,7 +17,7 @@ module.exports = {
         name: "About",
         nameInParamCase: "overview",
         description: "General info about Volto, Plone and the differences between Volto and Plone Classic",
-        shape: "triangle",
+        shape: "info",
         color: "var(--ifm-color-primary)",
         githubRepo: "apache/apisix",
         version: "2.5",
@@ -29,7 +29,7 @@ module.exports = {
         nameInParamCase: "overview",
         description:
           "See who is using Plone and why",
-        shape: "square",
+        shape: "presentation",
         color: "#10B981",
         githubRepo: "apache/apisix-dashboard",
         version: "2.5",

@@ -9,6 +9,8 @@ import IconHexagon from "../assets/icons/verified.svg";
 import IconContent from "../assets/icons/content.svg";
 import IconPlone from "../assets/icons/plone.svg";
 import IconConnector from "../assets/icons/connector.svg";
+import IconInfo from "../assets/icons/info.svg";
+import IconPresentation from "../assets/icons/presentation.svg";
 
 const Page = styled.div`
   max-width: var(--ifm-container-width);
@@ -125,6 +127,10 @@ const ProjectCard = (props) => {
         <IconPlone />
     ) : shape === "connector" ? (
         <IconConnector />
+    ) : shape === "info" ? (
+          <IconInfo />
+    ) : shape === "presentation" ? (
+          <IconPresentation />
     ) : (
       <IconHexagon />
     );
