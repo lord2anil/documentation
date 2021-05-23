@@ -23,7 +23,7 @@ module.exports = {
     lastUpdated: 'Last Updated',
     repo: 'plone/documentation',
     docsDir: 'docs',
-    editLinks: false,
+    editLinks: true,
     editLinkText: 'Help us improve this page!',
     nav: [
       { text: 'Demo', link: 'https://volto.kitconcept.com' },
@@ -32,17 +32,16 @@ module.exports = {
     ],
     sidebar: [{
       title: 'Overview',
-      collapsable: false,
+      collapsable: true,
       children: [
-        'alt-text',
-        'accessibility-terms',
-        'admonitions',
+        'overview/resources',
+
       ]
     },
     {
       title: 'Get started',
-      path: '/get-started/',
-      collapsable: false,
+      //path: '/get-started/',
+      collapsable: true,
       children: [
         'cli',
         'headings',
@@ -51,8 +50,8 @@ module.exports = {
       },
       {
         title: 'Frontend',
-        path: '/frontend/',
-        collapsable: false,
+        //path: '/frontend/',
+        collapsable: true,
         children: [
           'cli',
           'headings',
@@ -61,8 +60,8 @@ module.exports = {
       },
       {
         title: 'Backend',
-        path: '/backend/',
-        collapsable: false,
+        //path: '/backend/',
+        collapsable: true,
         children: [
           'cli',
           'headings',
@@ -72,16 +71,14 @@ module.exports = {
       {
         title: 'Deploying',
         path: '/deploy/',
-        collapsable: false,
+        collapsable: true,
         children: [
           'deploy/pm2',
-          'headings',
-          'numbers'
         ]
       },
       {
         title: 'Content Management',
-        path: '/cms/',
+        //path: '/cms/',
         collapsable: true,
         children: [
           'cli',
