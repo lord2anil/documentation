@@ -129,7 +129,7 @@ export default {
   display inline-block
   a
     line-height 1.4rem
-    color #e40166
+    color #062e3b
     &:hover, &.router-link-active
       color #e40166
   .nav-item
