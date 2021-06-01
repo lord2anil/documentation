@@ -143,3 +143,4 @@ $navbar-horizontal-padding = 1.5rem
       white-space nowrap
       text-overflow ellipsis
 </style>
+

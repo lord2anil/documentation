@@ -5,6 +5,12 @@ module.exports = {
   title: 'Plone Documentation',
   description: 'Make every word matter',
   base: "/",
+  markdown: {
+    lineNumbers: true,
+    toc: {
+      includeLevel: [3]
+    }
+  },
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['link', {
