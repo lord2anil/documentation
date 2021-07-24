@@ -6,16 +6,21 @@
     padding .1rem 1.5rem
     border-left-width .5rem
     border-left-style solid
+    border-radius: 0.4rem
     margin 1rem 0
   &.tip
-    background-color #f3f5f7
+    background-color #edf1f2
     border-color #42b983
+    // border-radius: 0.4rem
   &.warning
-    background-color rgba(255,229,100,.3)
-    border-color darken(#ffe564, 35%)
-    color darken(#ffe564, 70%)
+    background-color #edf1f2
+    border-color $warningPink
+    // border-color darken(#ffe564, 35%)
+    // color darken(#ffe564, 70%)
+    color $textColor
     .custom-block-title
-      color darken(#ffe564, 50%)
+      color $textColor
+      // color darken(#ffe564, 50%)
     a
       color $textColor
   &.danger

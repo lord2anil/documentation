@@ -29,9 +29,11 @@ module.exports = {
     lastUpdated: 'Last Updated',
     repo: 'plone/documentation',
     docsDir: 'docs',
+    docsBranch: '6',
     editLinks: true,
-    editLinkText: 'Help us improve this page!',
+    editLinkText: 'Is this doc out of date? Suggest a change!',
     nav: [
+      { text: 'Plone Classic Docs', link: 'https://volto.kitconcept.com' },
       { text: 'Demo', link: 'https://volto.kitconcept.com' },
       { text: 'Community', link: 'https://community.plone.org/' },
       { text: 'Training', link: 'https://training.plone.org/' },
@@ -41,6 +43,7 @@ module.exports = {
       collapsable: true,
       children: [
         'overview/resources',
+        'overview/use-cases',
 
       ]
     },
@@ -49,7 +52,7 @@ module.exports = {
       //path: '/get-started/',
       collapsable: true,
       children: [
-        'cli',
+        'install',
         'headings',
         'numbers'
       ]
