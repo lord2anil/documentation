@@ -62,9 +62,7 @@ module.exports = {
         //path: '/frontend/',
         collapsable: true,
         children: [
-          'cli',
-          'headings',
-          'numbers'
+          'frontend/blocks',
         ]
       },
       {
@@ -83,6 +81,8 @@ module.exports = {
         collapsable: true,
         children: [
           'deploy/pm2',
+          'deploy/apache',
+          'deploy/seamless-mode',
         ]
       },
       {
