@@ -63,6 +63,11 @@ module.exports = {
         collapsable: true,
         children: [
           'frontend/blocks',
+          'frontend/about-semantic',
+          'frontend/semanticui-theming',
+          'frontend/theming-engine',
+          'frontend/custom-styling',
+          'frontend/using-third-party-themes',
         ]
       },
       {
