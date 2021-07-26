@@ -75,7 +75,7 @@ module.exports = {
         //path: '/backend/',
         collapsable: true,
         children: [
-          'cli',
+          'backend/integration',
           'headings',
           'numbers'
         ]
