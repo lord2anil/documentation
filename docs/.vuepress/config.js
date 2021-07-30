@@ -68,6 +68,18 @@ module.exports = {
           'frontend/theming-engine',
           'frontend/custom-styling',
           'frontend/using-third-party-themes',
+          'frontend/creating-views',
+          'frontend/customizing-views',
+          'frontend/i18n',
+          'frontend/overridei18n',
+          'frontend/lazyload',
+          'frontend/creating-project',
+          'frontend/folder-structure',
+          'frontend/customizing-components',
+          'frontend/express',
+          'frontend/appextras',
+          'frontend/contextnavigation',
+          'frontend/pluggables',
         ]
       },
       {
@@ -98,6 +110,21 @@ module.exports = {
           'cli',
           'headings',
           'numbers'
+        ]
+      },
+      {
+        title: 'Guidelines',
+        //path: '/cms/',
+        collapsable: true,
+        children: [
+          'guidelines/testing',
+          'guidelines/routing',
+          'guidelines/redux',
+          'guidelines/react',
+          'guidelines/linting',
+          'guidelines/language-features',
+          'guidelines/accessibility-guidelines',
+          'guidelines/acceptance-tests',
         ]
       },
   ]
