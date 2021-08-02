@@ -44,6 +44,8 @@ module.exports = {
       children: [
         'overview/resources',
         'overview/use-cases',
+        'overview/design-principles',
+        'overview/developer-good-practices'
 
       ]
     },
@@ -80,6 +82,7 @@ module.exports = {
           'frontend/appextras',
           'frontend/contextnavigation',
           'frontend/pluggables',
+          'frontend/design',
         ]
       },
       {
