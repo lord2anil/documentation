@@ -45,7 +45,8 @@ module.exports = {
         'overview/resources',
         'overview/use-cases',
         'overview/design-principles',
-        'overview/developer-good-practices'
+        'overview/developer-good-practices',
+        'overview/settings-reference',
 
       ]
     },
@@ -83,6 +84,11 @@ module.exports = {
           'frontend/contextnavigation',
           'frontend/pluggables',
           'frontend/design',
+          'frontend/workingcopy',
+          'frontend/multilingual',
+          'frontend/richeditor-settings',
+          'frontend/expanders',
+          'frontend/configuration-registry',
         ]
       },
       {
@@ -91,8 +97,18 @@ module.exports = {
         collapsable: true,
         children: [
           'backend/integration',
-          'headings',
+          'backend/config-backend',
           'numbers'
+        ]
+      },
+      {
+        title: 'Building',
+        //path: '/backend/',
+        collapsable: true,
+        children: [
+          'building/environmentvariables',
+          'building/internalproxy',
+          'building/zero-config-builds',
         ]
       },
       {
