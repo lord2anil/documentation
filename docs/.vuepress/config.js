@@ -47,7 +47,17 @@ module.exports = {
         'overview/design-principles',
         'overview/developer-good-practices',
         'overview/settings-reference',
-
+        {
+          title: 'Guidelines',
+          collapsable: true,
+          children: [
+            'guidelines/testing',
+            'guidelines/routing',
+            'guidelines/redux',
+            'guidelines/language-features',
+            'guidelines/acceptance-tests',
+          ]
+        }
       ]
     },
     {
@@ -56,8 +66,7 @@ module.exports = {
       collapsable: true,
       children: [
         'install',
-        'headings',
-        'numbers'
+        'creating-project'
       ]
       },
       {
@@ -67,29 +76,26 @@ module.exports = {
         children: [
           'frontend/blocks',
           'frontend/about-semantic',
-          'frontend/semanticui-theming',
-          'frontend/theming-engine',
-          'frontend/custom-styling',
-          'frontend/using-third-party-themes',
-          'frontend/creating-views',
-          'frontend/customizing-views',
-          'frontend/i18n',
-          'frontend/overridei18n',
-          'frontend/lazyload',
-          'frontend/creating-project',
           'frontend/folder-structure',
-          'frontend/customizing-components',
-          'frontend/express',
-          'frontend/appextras',
           'frontend/contextnavigation',
-          'frontend/pluggables',
-          'frontend/design',
           'frontend/workingcopy',
           'frontend/multilingual',
-          'frontend/richeditor-settings',
-          'frontend/expanders',
           'frontend/configuration-registry',
-        ]
+          {
+            title: 'Theme',
+            //path: '/backend/',
+            collapsable: true,
+            children: [
+              'theme/semanticui-theming',
+              'theme/custom-styling',
+              'theme/theming-engine',
+              'theme/theming-strategy',
+              'theme/using-third-party-themes',
+              'theme/accessibility-guidelines',
+              'theme/design'
+            ]
+          },
+        ]        
       },
       {
         title: 'Backend',
@@ -97,12 +103,11 @@ module.exports = {
         collapsable: true,
         children: [
           'backend/integration',
-          'backend/config-backend',
-          'numbers'
+          'backend/config-backend'
         ]
       },
       {
-        title: 'Building',
+        title: 'Configuration',
         //path: '/backend/',
         collapsable: true,
         children: [
@@ -112,13 +117,31 @@ module.exports = {
         ]
       },
       {
-        title: 'Deploying',
+        title: 'Guides',
         path: '/deploy/',
         collapsable: true,
         children: [
           'deploy/pm2',
           'deploy/apache',
           'deploy/seamless-mode',
+          'deploy/lazyload',
+          'deploy/customizing-views.md',
+          'deploy/customizing-components.md',
+          'deploy/express',
+          'deploy/i18n',
+          'deploy/overridei18n',
+          'deploy/appextras',
+          'deploy/expanders',
+          'deploy/richeditor-settings'
+        ]
+      },
+      {
+        title: 'Tutorials',
+        //path: '/backend/',
+        collapsable: true,
+        children: [
+          'tutorials/creating-views',
+          'tutorials/pluggables'
         ]
       },
       {
@@ -126,26 +149,10 @@ module.exports = {
         //path: '/cms/',
         collapsable: true,
         children: [
-          'cli',
-          'headings',
-          'numbers'
+          'cli'
         ]
       },
-      {
-        title: 'Guidelines',
-        //path: '/cms/',
-        collapsable: true,
-        children: [
-          'guidelines/testing',
-          'guidelines/routing',
-          'guidelines/redux',
-          'guidelines/react',
-          'guidelines/linting',
-          'guidelines/language-features',
-          'guidelines/accessibility-guidelines',
-          'guidelines/acceptance-tests',
-        ]
-      },
+      
   ]
   }
 }
