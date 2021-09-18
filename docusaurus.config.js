@@ -4,7 +4,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'Plone Documentation',
-  tagline: 'Plone is cool',
+  tagline: 'This is a community-maintained manual for the Plone content management system.',
   url: 'https://sven.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -113,10 +113,14 @@ module.exports = {
               label: 'Training',
               href: 'https://training.plone.org',
             },
+            {
+              label: 'Jenkins',
+              href: 'https://jenkins.plone.org',
+            },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Plone Community. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Plone Community.`,
     },
   },
   presets: [

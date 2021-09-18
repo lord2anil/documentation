@@ -85,8 +85,8 @@ const snippets = [
 
 const features = [
    {
-     title: 'Cool Stuff',
-     imageUrl: 'img/plone.svg',
+     title: 'Plone 6',
+     imageUrl: 'img/volto-screen.png',
      description: (
        <>
          <p>
@@ -97,8 +97,8 @@ const features = [
      ),
    },
    {
-     title: 'Community',
-     imageUrl: 'img/plone.svg',
+     title: 'Plone 6 Classic',
+     imageUrl: 'img/plone-classic-screen.png',
      description: (
        <>
          <p>
@@ -144,17 +144,21 @@ const features = [
   // },
 ];
 
+
 function Feature({imageUrl, title, description}) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
     <div className={classnames('col col--6', styles.feature)}>
+      <h3>{title}</h3>
+      {/* {description} */}
       {imgUrl && (
-        <div className="text--center">
+        <div>
+        {/* <div className="text--center"> */}
           <img className={classnames('padding-vert--md', styles.featureImage)} src={imgUrl} alt={title} />
         </div>
       )}
-      <h3>{title}</h3>
-      {description}
+      {/* <h3>{title}</h3>
+      {description} */}
     </div>
   );
 }
@@ -173,7 +177,7 @@ function Home() {
             <div className={classnames('col col--5 col--offset-1')}>
               <h1 className="hero__title">{siteConfig.title}</h1>
               <p className="hero__subtitle">{siteConfig.tagline}</p>
-              <p>Plone is cool</p>
+              <p>Plone means disco pants!</p>
               <div className={styles.buttons}>
                 <Link
                   className={classnames(
@@ -186,7 +190,7 @@ function Home() {
               </div>
             </div>
             <div className={classnames('col col--5')}>
-              <img className={styles.heroImg} src="img/plone.svg" class="plone-home-animation"/>
+              <img className={styles.heroImg} src="img/editor-preview.png" class="plone-home-animation"/>
             </div>
           </div>
         </div>
