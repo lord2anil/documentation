@@ -60,7 +60,8 @@ module.exports = {
           position: 'left',
           label: 'Guides',
         },
-        {to: '/help', label: 'Support', position: 'left'},
+        {to: '/help', label: 'Help', position: 'left'},
+        {to: 'https://training.plone.org', label: 'Training', position: 'right'},
 
       ],
     },
@@ -84,20 +85,20 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Discord',
+              href: 'https://discord.gg/zFY3EBbjaj',
             },
             {
-              label: 'Slack',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'Discourse',
+              href: 'https://community.plone.org',
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: 'Collective',
+              href: 'https://github.com/collective',
             },
             {
-              label: 'Something',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'GitHub',
+              href: 'https://github.com/plone',
             },
           ],
         },
@@ -105,17 +106,13 @@ module.exports = {
           title: 'More',
           items: [
             {
-              label: 'Roadmap',
-              to: '/changelog',
+              label: 'PLONE.ORG',
+              href: 'https://plone.org',
             },
             {
               label: 'Training',
-              to: '/changelog',
+              href: 'https://training.plone.org',
             },
-            // {
-            //   label: 'GitHub',
-            //   href: 'https://github.com/facebook/docusaurus',
-            // },
           ],
         },
       ],

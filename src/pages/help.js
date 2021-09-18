@@ -35,7 +35,7 @@ function Help(props) {
         We are here to help.
       </PageSubtitle>
       <p>Chances are good that the developer site has the information that you're looking for.<br></br>
-         All you need to do is find it. We have a starting place for just about any situation:</p>
+         All you need to do is find it.</p>
       <div className="row cards">
         <div className="card">
           <div className="header">
@@ -56,55 +56,32 @@ function Help(props) {
             </a>
           </div>
         </div>
-        <div className="card">
-          <div className="header">
-            <h2>
-              <img
-                src="/img/documents.png"
-                id="documents-icon"
-                alt="documents icon"
-              />
-              General Overview
-            </h2>
-          </div>
-          <p>Check the API status, read the changelog.</p>
-          <div className="buttons">
-            <a href="https://apisix.apache.org/docs/" target="_blank">
-              API Status
-              <ChevronRight />
-            </a>
-            <a href="https://apisix.apache.org/docs/" target="_blank">
-              API Changelog
-              <ChevronRight />
-            </a>
-          </div>
-        </div>
-        <div className="card">
+                <div className="card">
           <div className="header">
             <h2>
               <img src="/img/community.png" alt="community icon" />
-              Join Community
+              Join The Community
             </h2>
           </div>
           <p>Ask questions about the documentation and project</p>
           <div className="buttons">
-            <a href="https://github.com/apache/apisix/issues" target="_blank">
-              GitHub
+            <a href="https://community.plone.org/" target="_blank">
+              Discourse
               <ChevronRight />
             </a>
-            <a href="https://github.com/apache/apisix/issues" target="_blank">
-              Postman
+            <a href="https://github.com/collective" target="_blank">
+              Collective
               <ChevronRight />
             </a>
             <a
-              href="https://join.slack.com/t/the-asf/shared_invite/zt-mrougyeu-2aG7BnFaV0VnAT9_JIUVaA"
+              href="Discord."
               target="_blank"
             >
-              Slack
+              Discord
               <ChevronRight />
             </a>
-            <a href="https://twitter.com/ApacheAPISIX" target="_blank">
-              Twitter
+            <a href="https://github.com/plone" target="_blank">
+              GitHub
               <ChevronRight />
             </a>
           </div>
