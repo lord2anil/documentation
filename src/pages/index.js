@@ -97,7 +97,7 @@ const features = [
      ),
    },
    {
-     title: 'Plone 6 Classic',
+     title: 'Plone 6 Classic UI',
      imageUrl: 'img/plone-classic-screen.png',
      description: (
        <>
