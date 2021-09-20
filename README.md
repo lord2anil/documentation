@@ -34,4 +34,4 @@ If you are using GitHub pages for hosting, this command is a convenient way to b
 
 ## Notes
 
-- Add links in navbar to demo sites of Plone 6 and Plone 6 Classic UI
+- Use multiple sidebars one for volto/default one for classic UI
