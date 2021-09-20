@@ -35,4 +35,3 @@ If you are using GitHub pages for hosting, this command is a convenient way to b
 ## Notes
 
 - Use multiple sidebars one for volto/default one for classic UI
-- Create dropdown for tutorials and guides and make them able to choose between volto and classic UI

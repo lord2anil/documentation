@@ -46,19 +46,49 @@ module.exports = {
         src: 'img/plone.svg',
       },
       items: [
+        // {
+        //   //type: 'doc',
+        //   docId: 'upload',
+        //   to: '/tutorials/upload',
+        //   position: 'left',
+        //   label: 'Tutorials',
+        // },
         {
-          //type: 'doc',
-          docId: 'upload',
-          to: '/tutorials/upload',
-          position: 'left',
+          type: 'dropdown',
           label: 'Tutorials',
-        },
-        {
-          //type: 'doc',
-          docId: 'upload',
-          to: '/tutorials/upload',
           position: 'left',
+          items: [
+            {
+              label: 'Plone 6',
+              href: 'https://demo.plone.org',
+            },
+            {
+              label: 'Plone 6 Classic UI',
+              href: 'https://demo-classic.plone.org',
+            },
+          ],
+        },
+        // {
+        //   //type: 'doc',
+        //   docId: 'upload',
+        //   to: '/tutorials/upload',
+        //   position: 'left',
+        //   label: 'Guides',
+        // },
+        {
+          type: 'dropdown',
           label: 'Guides',
+          position: 'left',
+          items: [
+            {
+              label: 'Plone 6',
+              href: 'https://demo.plone.org',
+            },
+            {
+              label: 'Plone 6 Classic UI',
+              href: 'https://demo-classic.plone.org',
+            },
+          ],
         },
         {to: '/help', label: 'Help', position: 'left'},
         {to: 'https://training.plone.org', label: 'Training', position: 'right'},
