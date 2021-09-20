@@ -62,6 +62,21 @@ module.exports = {
         },
         {to: '/help', label: 'Help', position: 'left'},
         {to: 'https://training.plone.org', label: 'Training', position: 'right'},
+        {
+          type: 'dropdown',
+          label: 'Demo',
+          position: 'right',
+          items: [
+            {
+              label: 'Plone 6',
+              href: 'https://demo.plone.org',
+            },
+            {
+              label: 'Plone 6 Classic UI',
+              href: 'https://demo-classic.plone.org',
+            },
+          ],
+        },
 
       ],
     },
