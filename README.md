@@ -2,10 +2,21 @@
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
+## Requirements
+
+- Yarn (classic)
+
+
 ## Installation
 
 ```console
 yarn install
+```
+
+or
+
+```console
+make install
 ```
 
 ## Local Development
