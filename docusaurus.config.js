@@ -53,21 +53,21 @@ module.exports = {
         //   position: 'left',
         //   label: 'Tutorials',
         // },
-        {
-          type: 'dropdown',
-          label: 'Tutorials',
-          position: 'left',
-          items: [
-            {
-              label: 'Plone 6',
-              href: 'https://demo.plone.org',
-            },
-            {
-              label: 'Plone 6 Classic UI',
-              href: 'https://demo-classic.plone.org',
-            },
-          ],
-        },
+        // {
+        //   type: 'dropdown',
+        //   label: 'Tutorials',
+        //   position: 'left',
+        //   items: [
+        //     {
+        //       label: 'Plone 6',
+        //       href: 'https://demo.plone.org',
+        //     },
+        //     {
+        //       label: 'Plone 6 Classic UI',
+        //       href: 'https://demo-classic.plone.org',
+        //     },
+        //   ],
+        // },
         // {
         //   //type: 'doc',
         //   docId: 'upload',
@@ -75,21 +75,21 @@ module.exports = {
         //   position: 'left',
         //   label: 'Guides',
         // },
-        {
-          type: 'dropdown',
-          label: 'Guides',
-          position: 'left',
-          items: [
-            {
-              label: 'Plone 6',
-              href: 'https://demo.plone.org',
-            },
-            {
-              label: 'Plone 6 Classic UI',
-              href: 'https://demo-classic.plone.org',
-            },
-          ],
-        },
+        // {
+        //   type: 'dropdown',
+        //   label: 'Guides',
+        //   position: 'left',
+        //   items: [
+        //     {
+        //       label: 'Plone 6',
+        //       href: 'https://demo.plone.org',
+        //     },
+        //     {
+        //       label: 'Plone 6 Classic UI',
+        //       href: 'https://demo-classic.plone.org',
+        //     },
+        //   ],
+        // },
         {to: '/help', label: 'Help', position: 'left'},
         {to: 'https://training.plone.org', label: 'Training', position: 'right'},
         {
@@ -123,6 +123,10 @@ module.exports = {
             {
               label: 'Guides',
               to: '/changelog',
+            },
+            {
+              label: 'FAQ',
+              to: '/overview/faq',
             },
           ],
         },
