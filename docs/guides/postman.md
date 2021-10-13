@@ -1,4 +1,8 @@
-# Internationalization
+---
+id: post
+title: Postman
+---
+
 
 Internationalization (i18n) is the process of creating user interfaces which are suitable for different languages and cultural contexts.
 Volto uses the library [react-intl](https://www.npmjs.com/package/react-intl) to provide translations for any potential language.

@@ -184,7 +184,7 @@ function Home() {
                     'button button--outline button--primary button--lg',
                     styles.getStarted,
                   )}
-                  to={useBaseUrl('docs/overview/about-plone')}>
+                  to={useBaseUrl('overview/about-plone')}>
                   Get Started
                 </Link>
               </div>

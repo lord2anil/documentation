@@ -46,6 +46,18 @@ module.exports = {
         src: 'img/plone.svg',
       },
       items: [
+        {
+          type: 'doc',
+          position: 'left',
+          docId: 'volto',
+          label: 'Volto',
+        },
+        {
+          type: 'doc',
+          position: 'left',
+          docId: 'classic',
+          label: 'Classic-UI',
+        },
         // {
         //   //type: 'doc',
         //   docId: 'upload',
