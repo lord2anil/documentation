@@ -12,6 +12,7 @@ module.exports = {
   ],
   ClassicSidebar: [
     'classic',
+    'overview',
     {
       type: 'category',
       label: 'Theming',
