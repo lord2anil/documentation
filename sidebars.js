@@ -4,6 +4,7 @@ module.exports = {
 
   VoltoSidebar: [
     'volto',
+    'test',
     {
       type: 'category',
       label: 'Views',
