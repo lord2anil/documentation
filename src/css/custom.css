@@ -4,6 +4,7 @@
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
+ @import "announcement-bar.css";
 
 /* Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
@@ -172,9 +173,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* sidebar CSS */
-html[data-theme=light] .menu>ul>.menu__list-item {
-  border-top: 1px solid #d5d5d5;
-}
+
 
 .menu__list-item {
   margin: .25rem 0;
@@ -325,4 +324,31 @@ padding: 8px;
 
 .container {
   padding: 2px 16px;
+}
+
+/* announcementBar button */
+
+.announcementBar {
+  border: 0.5px solid #F0F0F0;
+  border-radius: 4px;
+  padding: 1px 9px;
+  color: #F0F0F0;
+  background-color: #0D65BE;
+  font-weight: 500;
+  font-size: 17px;
+  font-family: "museo-sans",sans-serif;
+  line-height: 16px;
+}
+
+.announcementBar:hover {
+  background-color: #3a7cbd;
+  color: #F0F0F0;
+  cursor:pointer;
+}
+
+.announcementBar:active {
+  background:linear-gradient(to bottom, rgb(255,255,255) 0%, rgb(255,255,255) 100%);
+  color:#F0F0F0;
+  box-shadow: 0px 1px 0px #b71d15, 0px 1px 1px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 1px rgba(255,255,255,.5);
+  transform:translate(0, 2px);
 }
