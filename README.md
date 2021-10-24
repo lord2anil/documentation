@@ -21,6 +21,12 @@ yarn run start
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
+## Commits
+
+[Lefthook](https://github.com/evilmartians/lefthook) will run QA tests against changed files in the `/docs`
+directory.
+If tests are failing you will see that in your CLI.
+
 ## Build
 
 ```console

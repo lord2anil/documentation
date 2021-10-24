@@ -1,0 +1,14 @@
+# lefthook.yml
+
+pre-commit:
+  parallel: true
+  commands:
+    alex:
+      glob: "docs/*.{md}"
+      run: ./node_modules/.bin/alex {staged_files}
+    markdown:
+      glob: "docs/*.{md}"
+      run: ./node_modules/.bin/markdownlint {staged_files}
+    linkcheck:
+      glob: "docs/*.{md}"
+      run: ./node_modules/.bin/markdown-link-check -c .mlc_config.json --quiet {staged_files}
