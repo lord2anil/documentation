@@ -4,25 +4,19 @@ This website is built using [Docusaurus 2](https://docusaurus.io/), a modern sta
 
 ## Requirements
 
+- [Task](https://taskfile.dev/#/)
 - Yarn (classic)
-
 
 ## Installation
 
 ```console
-yarn install
-```
-
-or
-
-```console
-make install
+task install
 ```
 
 ## Local Development
 
 ```console
-yarn start
+yarn run start
 ```
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.

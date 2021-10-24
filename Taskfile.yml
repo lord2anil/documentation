@@ -1,0 +1,17 @@
+version: '3'
+
+tasks:
+  install:
+    desc: Install packages using Yarn
+    cmds:
+      - yarn install
+
+  update:
+    desc: Update packages with Yarn
+    cmds:
+      - yarn upgrade-interactive
+
+  run-dev:
+    desc: Run locally in dev-mode
+    cmds:
+      - yarn run start
