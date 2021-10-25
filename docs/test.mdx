@@ -7,13 +7,16 @@ hide_table_of_contents: true
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import BrowserWindow from '@site/src/components/BrowserWindow';
 
 <div className="box-wrapper" markdown="1">
   <div className="box box1 card">
     <div className="container">
     <h2>Volto</h2>
     <p>All about Volto</p>
+    <BrowserWindow url="http://localhost:8080">
         <img src={useBaseUrl('/img/volto-screen.png')} />
+    </BrowserWindow>
     </div>
   </div>
 
@@ -31,8 +34,10 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
         <li><a href="/ci/jenkins">Differences</a></li>
         <li><a href="/ci/bamboo">FAQ</a></li>
         <li>and <a href="/ci">More</a></li>
-        <img src={useBaseUrl('/img/plone-classic-screen.png')} />
     </ul>
+    <BrowserWindow url="http://localhost:8080">
+        <img src={useBaseUrl('/img/plone-classic-screen.png')} />
+    </BrowserWindow>
     </div>
   </div>
 </div>
