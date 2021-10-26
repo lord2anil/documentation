@@ -4,7 +4,8 @@
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
- @import "announcement-bar.css";
+@import "announcement-bar.css";
+@import "help-page.css";
 
 /* Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
@@ -92,72 +93,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #001530;
 }
 
-/* help page */
-.help-page .cards {
-  margin-top: 38px;
-  margin-bottom: 56px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 36px;
-}
-.help-page .card {
-  padding: 24px 28px 18px 28px;
-  border: 1px solid #eee;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.03);
-}
 
-.help-page .card .header {
-  padding: 0;
-}
-
-.help-page .card h2 {
-  display: flex;
-  align-items: center;
-}
-
-.help-page .card h2 img {
-  padding-bottom: 2px;
-  height: 28px;
-  margin-right: 14px;
-}
-
-.help-page #documents-icon {
-  margin-right: 10px;
-  margin-left: -6px;
-}
-
-.help-page .card p {
-  color: #6b7280;
-}
-
-.help-page .card .buttons {
-  margin-top: 18px;
-}
-
-.help-page .card .buttons a {
-  font-size: 18px;
-  font-weight: 600;
-  transition: all 0.3s;
-  margin-right: 32px;
-}
-
-.help-page .card .buttons a:hover {
-  text-decoration: none;
-}
-
-.help-page .card .buttons a:hover svg {
-  transform: translateX(2px);
-}
-
-.help-page .card .buttons svg {
-  height: 12px;
-  margin-left: 4px;
-  transition: transform 0.3s;
-}
-
-.help-page .card .buttons {
-  display: flex;
-}
 
 .sidebar_node_modules-\@docusaurus-theme-classic-lib-next-theme-DocSidebar-styles-module {
   display: flex;
@@ -215,13 +151,7 @@ html[data-theme=dark] .menu>ul>.menu__list-item:first-child, html[data-theme=lig
   display: block;
 }
 
-/* ReDoc */
-.redocusaurus h2, .redocusaurus h3, .redocusaurus h4 {
-  color: #6a6e7a !important;
-}
-/* ReDoc end */
-
-/* Custom plone colors for admonitions  */
+/* Custom Plone colors for admonitions  */
 .alert--secondary {
   --ifm-alert-background-color: #f2f5f7;
   --ifm-alert-background-color-highlight: rgba(235, 237, 240, 0.15);
@@ -267,7 +197,7 @@ blockquote {
   padding: var(--ifm-blockquote-padding-vertical) var(--ifm-blockquote-padding-horizontal);
 }
 
-/* End - Custom plone colors for admonitions  */
+/* End - Custom Plone colors for admonitions  */
 
 /* Hub and introduction page CSS below */
 
