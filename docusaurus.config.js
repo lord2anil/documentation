@@ -17,7 +17,9 @@ module.exports = {
   organizationName: 'plone', // Usually your GitHub org/user name.
   projectName: 'documentation', // Usually your repo name.
   plugins: [
-    require.resolve('@cmfcmf/docusaurus-search-local')
+    [require.resolve('@cmfcmf/docusaurus-search-local'), {
+      style: undefined,
+    }]
   ],
   themeConfig: {
     announcementBar: {

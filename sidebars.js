@@ -10,6 +10,12 @@ module.exports = {
       label: 'Views',
       items: ['tutorials/upload'],
     },
+    {
+      type: 'category',
+      label: 'Backend',
+      items: ['backend/overview-backend'],
+    },
+
   ],
   ClassicSidebar: [
     'classic',
@@ -18,6 +24,11 @@ module.exports = {
       type: 'category',
       label: 'Theming',
       items: ['guides/post'],
+    },
+    {
+      type: 'category',
+      label: 'Backend',
+      items: ['backend/overview-backend'],
     },
   ],
 };
