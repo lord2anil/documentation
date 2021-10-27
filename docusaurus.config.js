@@ -180,6 +180,10 @@ module.exports = {
               label: 'Jenkins',
               href: 'https://jenkins.plone.org',
             },
+            {
+              label: 'Stack Overflow',
+              href: 'https://stackoverflow.com/questions/tagged/plone',
+            },
           ],
         },
       ],

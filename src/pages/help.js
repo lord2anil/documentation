@@ -48,7 +48,7 @@ function Help(props) {
               Browse Docs
             </h2>
           </div>
-          <p>Learn more using the documentation on this site.</p>
+          <p>Learn more</p>
           <div className="buttons">
             <a href="https://docs.plone.org" target="_blank">
               Read Documents
@@ -56,10 +56,6 @@ function Help(props) {
             </a>
             <a href="https://training.plone.org" target="_blank">
               Training
-              <ChevronRight />
-            </a>
-            <a href="https://stackoverflow.com/questions/tagged/plone" target="_blank">
-            Stack Overflow
               <ChevronRight />
             </a>
           </div>
@@ -71,27 +67,28 @@ function Help(props) {
               Join The Community
             </h2>
           </div>
-          <p>Ask questions about the documentation and project</p>
+          <p>Ask questions about the project, connect with the community</p>
           <div className="buttons">
             <a href="https://community.plone.org/" target="_blank">
-              Discourse
+              Discord
               <ChevronRight />
             </a>
             <a href="https://github.com/collective" target="_blank">
-              Collective
+              Discourse
               <ChevronRight />
             </a>
             <a
               href="Discord."
               target="_blank"
             >
-              Discord
+              Collective
               <ChevronRight />
             </a>
             <a href="https://github.com/plone" target="_blank">
               GitHub
               <ChevronRight />
             </a>
+            
           </div>
         </div>
       </div>
