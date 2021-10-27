@@ -50,8 +50,16 @@ function Help(props) {
           </div>
           <p>Learn more using the documentation on this site.</p>
           <div className="buttons">
-            <a href="https://apisix.apache.org/docs/" target="_blank">
+            <a href="https://docs.plone.org" target="_blank">
               Read Documents
+              <ChevronRight />
+            </a>
+            <a href="https://training.plone.org" target="_blank">
+              Training
+              <ChevronRight />
+            </a>
+            <a href="https://stackoverflow.com/questions/tagged/plone" target="_blank">
+            Stack Overflow
               <ChevronRight />
             </a>
           </div>
