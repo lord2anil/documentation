@@ -17,6 +17,7 @@ ALLSPHINXOPTS   = -d $(BUILDDIR)/doctrees $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) .
 # the i18n builder cannot share the environment and doctrees with the others
 I18NSPHINXOPTS  = $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) .
 
+PYTHON_VERSION = 3.9
 
 # Add the following 'help' target to your Makefile
 # And add help text after each target name starting with '\#\#'
@@ -35,13 +36,15 @@ distclean:  ## Clean docs build directory and Python virtual environment
 
 
 bin/python:
-	python3 -m venv . || virtualenv --clear --python=python3 .
+	python$(PYTHON_VERSION) -m venv . || virtualenv --clear --python=python$(PYTHON_VERSION) .
 	bin/python -m pip install --upgrade pip
 	bin/pip install -r requirements.txt
 
 docs/plone.api:
 	git submodule init; \
 	git submodule update; \
+	bin/pip install -r https://dist.plone.org/release/6.0-dev/requirements.txt; \
+	bin/pip install Plone plone.app.testing zope.testrunner -c https://dist.plone.org/release/6.0-dev/constraints.txt; \
 	bin/pip install -e submodules/plone.api/"[test]"; \
 	ln -s ../submodules/plone.api/docs ./docs/plone.api
 	@echo
