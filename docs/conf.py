@@ -44,6 +44,7 @@ templates_path = ["_templates"]
 extensions = [
     "myst_parser",
     "sphinx.ext.autodoc",
+    "sphinx.ext.ifconfig",  # plone.api
     "sphinx.ext.intersphinx",
     "sphinx.ext.todo",
     "sphinx_copybutton",
@@ -56,6 +57,8 @@ extensions = [
     "sphinx.ext.autosummary",  # plone.api
 ]
 
+def setup(app):
+    app.add_config_value("plone_api_doctests", "", True)
 
 # If true, the Docutils Smart Quotes transform, originally based on SmartyPants
 # (limited to English) and currently applying to many languages, will be used
