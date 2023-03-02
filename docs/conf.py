@@ -52,15 +52,13 @@ extensions = [
     "sphinx_sitemap",
     "sphinxcontrib.httpdomain",  # plone.restapi
     "sphinxcontrib.httpexample",  # plone.restapi
+    "sphinxcontrib.video",
     "sphinxext.opengraph",
     "sphinx.ext.viewcode",  # plone.api
     "sphinx.ext.autosummary",  # plone.api
     "sphinx.ext.graphviz",
     "notfound.extension",
-    "sphinxcontrib.video",
 ]
-
-graphviz_output_format = "svg"
 
 # If true, the Docutils Smart Quotes transform, originally based on SmartyPants
 # (limited to English) and currently applying to many languages, will be used
@@ -81,6 +79,7 @@ linkcheck_ignore = [
     r"http://127.0.0.1",
     r"http://yoursite",
     r"https://www.linode.com",
+    r"https://github.com/orgs/plone/teams/developers",  # requires auth
     r"https://github.com/plone/documentation/issues/new/choose",  # requires auth
     # Ignore specific anchors
     r"https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS/Errors#Identifying_the_issue",
@@ -97,6 +96,7 @@ linkcheck_ignore = [
     r"https://coveralls.io/repos/github/plone/plone.restapi/badge.svg\?branch=master",  # plone.restapi
     r"https://github.com/plone/plone.restapi/blob/dde57b88e0f1b5f5e9f04e6a21865bc0dde55b1c/src/plone/restapi/services/content/add.py#L35-L61",  # plone.restapi
     r"https://docs.cypress.io/guides/references/migration-guide#Migrating-to-Cypress-version-10-0",  # volto
+    r"^/_static/",
 ]
 linkcheck_anchors = True
 linkcheck_timeout = 10
@@ -140,7 +140,7 @@ html_extra_path = [
 
 html_static_path = [
     "volto/_static",
-    "_static",
+    "_static",  # Last path wins. See https://github.com/plone/documentation/pull/1442
 ]
 
 # -- Options for myST markdown conversion to html -----------------------------
@@ -155,7 +155,7 @@ myst_enable_extensions = [
     #  instead of ```.
     "substitution",  # plone.restapi \
     # https://myst-parser.readthedocs.io/en/latest/syntax/optional.html#substitutions-with-jinja2
-    "html_image",
+    "html_image",  # For inline images. See https://myst-parser.readthedocs.io/en/latest/syntax/optional.html
 ]
 
 myst_substitutions = {
@@ -214,7 +214,7 @@ copybutton_prompt_is_regexp = True
 
 # -- sphinx-notfound-page configuration ----------------------------------
 
-notfound_urls_prefix = None
+notfound_urls_prefix = ""
 notfound_template = "404.html"
 
 
@@ -322,7 +322,7 @@ def source_replace(app, docname, source):
 # Dict of replacements.
 source_replacements = {
     "{PLONE_BACKEND_MINOR_VERSION}": "6.0",
-    "{PLONE_BACKEND_PATCH_VERSION}": "6.0.1",
+    "{PLONE_BACKEND_PATCH_VERSION}": "6.0.2",
     "{NVM_VERSION}": "0.39.3",
 }
 
