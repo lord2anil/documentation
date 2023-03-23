@@ -16,12 +16,15 @@ Describe how create forms with Plone's default form framework z3c.form.
 Fields, Widgets, Vocabularies aso are descripted in detail in there own chapter and will be referenced frome examples here.
 ```
 
-Plone uses the [z3c.form](http://pythonhosted.org/z3c.form) library to build its forms, via the [plone.z3cform](http://pypi.python.org/pypi/plone.z3cform) integration package.
 
-For an easy way to structure a form and define its widgets and fields, Plone relies on [plone.autoform](http://pypi.python.org/pypi/plone.autoform), in particular its AutoExtensibleForm base class.
-Which is responsible for processing form hints and setting up [z3c.form](http://pythonhosted.org/z3c.form) widgets and groups (fieldsets).
+Plone uses the [z3c.form](http://pythonhosted.org/z3c.form) library to build its web-forms. 
+The package responsible for integrating with Plone is [plone.z3cform](http://pypi.python.org/pypi/plone.z3cform).
 
-A form, therefore, is simply a view that uses these libraries, although [plone.autoform](http://pypi.python.org/pypi/plone.autoform) provides some helpful base classes that make it easier to construct forms based on the form schema or {ref}`Dexterity behaviors <backend-behaviors-label>`.
+To simplify the process of organizing a form and specifying its widgets and fields, Plone utilizes [plone.autoform](http://pypi.python.org/pypi/plone.autoform), in particular its `AutoExtensibleForm` base class.
+It is responsible for handling form hints and configuring  z3c.form widgets and groups (fieldsets).
+
+A form is a view that utilizes these libraries. 
+plone.autoform offers useful base classes for views that simplify the process of creating forms based on either the form schema or {ref}`Dexterity behaviors <backend-behaviors-label>`.
 
 
 (classic-ui-forms-general-forms-label)=
@@ -35,16 +38,18 @@ cd collective.awesomeaddon
 plonecli add form
 ```
 
-After using the `plonecli` to add a form, we should have a new sub folder `forms` in our package.
+After using the `plonecli` to add a form, there is a new sub folder `forms` in your package.
 Here we will find a `configure.zcml` containing the registration of the form,
 
 ```xml
+<!-- ZCML header and other ZCML here  -->
 <browser:page
   name="my-form"
   for="*"
   class=".my_form.MyForm"
   permission="cmf.ManagePortal"
   layer="p6.theme5.interfaces.IP6Theme5Layer"
+<!-- further ZCML and ZCML footer here  -->
   />
 ```
 
@@ -62,7 +67,7 @@ class IMyForm(Interface):
         Define your form fields here.
     """
     name = schema.TextLine(
-        title=u"Your name",
+        title="Your name",
     )
 
 
@@ -70,10 +75,10 @@ class MyForm(AutoExtensibleForm, form.EditForm):
     schema = IMyForm
     ignoreContext = True
 
-    label = u"What's your name?"
-    description = u"Simple, sample form"
+    label = "What's your name?"
+    description = "Simple, sample form"
 
-    @button.buttonAndHandler(u'Ok')
+    @button.buttonAndHandler("Ok")
     def handleApply(self, action):
         data, errors = self.extractData()
         if errors:
@@ -88,7 +93,7 @@ class MyForm(AutoExtensibleForm, form.EditForm):
         if changes:
             self.status = "Settings saved"
 
-    @button.buttonAndHandler(u"Cancel")
+    @button.buttonAndHandler("Cancel")
     def handleCancel(self, action):
         """User canceled. Redirect back to the front page.
         """
