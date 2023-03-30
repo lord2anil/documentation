@@ -11,8 +11,8 @@ myst:
 
 # Overrides
 
-Chapter description for all the things.
-
+In Plone, overrides allow you to customize the behavior or look of ``views``, ``viewlets``, ``portlets``, ``tiles``, ``templates``, and ``REST API endpoints``.
+This is done by registering a new component that will replace the original one.
 
 (classic-ui-overrides-layer-label)=
 
