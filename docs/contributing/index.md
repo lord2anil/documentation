@@ -53,7 +53,7 @@ Please first search for a solution in our documentation and on our [Community Fo
 Many of our developers are active on our Forum and you will get the best advice there.
 The people there have been using Plone for a while or very long time, and are happy to help you get going if you find an report an omission in our documentation.
 
-For chat, we are using Discord. [Join the Plone Discord server](https://discord.gg/zFY3EBbjaj)
+For chat, we are using Discord. [Join the Plone Discord server](https://discord.com/invite/zFY3EBbjaj)
 Please note that our Discord server is mostly used for online 'synchronous' activities, communication in our teams and during sprints and our Plone Conference.
 It is not the preferred location for asking questions about set up, installation and other support questions that you might have. 
 Discord is not indexed, archived or structured for that kind of assistance. 
